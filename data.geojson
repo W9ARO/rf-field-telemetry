@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "AI4KA",
+        "stop": "1",
+        "location": "US319@Kerry Forrest Pkwy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22808,
+          30.54223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "AI4KA",
+        "stop": "2",
+        "location": "US319@SR93/Beachton GA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.14555,
+          30.70264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "AI4KA",
+        "stop": "3",
+        "location": "Bark of Thomasville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.02489,
+          30.79775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "AI4KA",
+        "stop": "4",
+        "location": "US319@US19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.94639,
+          30.86072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KN4FCC",
+        "stop": "1",
+        "location": "I10@US27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.31111,
+          30.48375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KN4FCC",
+        "stop": "2",
+        "location": "US27@FL/GA state line"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.38089,
+          30.6899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KN4FCC",
+        "stop": "3",
+        "location": "US27@Wautauga Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.46856,
+          30.7572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KN4FCC",
+        "stop": "4",
+        "location": "US27@Bainbridge GA City Limit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56509,
+          30.88162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "1",
+        "location": "FL20@FL65 Hosford FL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.79817,
+          30.39022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "2",
+        "location": "FL20@Bloxham Cutoff"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62772,
+          30.38932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "3",
+        "location": "10703 Bloxham Cutoff Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42364,
+          30.30538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "4",
+        "location": "US319@Bloxham Cutoff Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3625,
+          30.26351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "5",
+        "location": "3086 Crawfordville Hwy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.37569,
+          30.17475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "6",
+        "location": "US319@98"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.37978,
+          30.10464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "7",
+        "location": "Woolley Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.38781,
+          30.02858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4KKX",
+        "stop": "8",
+        "location": "Mashes Sands Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.34051,
+          29.97368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4QMO",
+        "stop": "1",
+        "location": "I10@US221"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.6223,
+          30.43293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4QMO",
+        "stop": "2",
+        "location": "Monticello Rest Area"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.73271,
+          30.44555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4QMO",
+        "stop": "3",
+        "location": "I10@CR257"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.76266,
+          30.45532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4QMO",
+        "stop": "4",
+        "location": "I10@SR14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.45619,
+          30.43117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4QMO",
+        "stop": "5",
+        "location": "I10@CR53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.35596,
+          30.39521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "KO4QMO",
+        "stop": "6",
+        "location": "I10@CR255"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.29772,
+          30.37987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "WA4WES",
+        "stop": "1",
+        "location": "I10@FL263"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.36326,
+          30.47972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "WA4WES",
+        "stop": "2",
+        "location": "I10@US90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42552,
+          30.4897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "WA4WES",
+        "stop": "3",
+        "location": "I10@FL267"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59506,
+          30.53812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Check-In",
+        "mobile_unit": "WA4WES",
+        "stop": "4",
+        "location": "I10@Rest Area East of Apalachicola River"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.89228,
+          30.62662
+        ]
+      }
+    }
+  ]
+}
