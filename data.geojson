@@ -4,6 +4,48 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Repeater Site",
+        "name": "AE4S 146.655 / 443.950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.2,
+          30.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Repeater Site",
+        "name": "K4TLH 146.910 / 444.800"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.24,
+          30.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Repeater Site",
+        "name": "K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22,
+          30.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "1",
