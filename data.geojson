@@ -4,8 +4,10 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "Repeater Site",
-        "name": "AE4S 146.655 / 443.950"
+        "type": "Repeater",
+        "name": "AE4S 146.655",
+        "site": "AE4S Site",
+        "band": "VHF"
       },
       "geometry": {
         "type": "Point",
@@ -18,8 +20,26 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "Repeater Site",
-        "name": "K4TLH 146.910 / 444.800"
+        "type": "Repeater",
+        "name": "AE4S 443.950",
+        "site": "AE4S Site",
+        "band": "UHF"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.2,
+          30.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Repeater",
+        "name": "K4TLH 146.910",
+        "site": "K4TLH Site",
+        "band": "VHF"
       },
       "geometry": {
         "type": "Point",
@@ -32,8 +52,26 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "Repeater Site",
-        "name": "K4TLH 147.030"
+        "type": "Repeater",
+        "name": "K4TLH 444.800",
+        "site": "K4TLH Site",
+        "band": "UHF"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.24,
+          30.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Repeater",
+        "name": "K4TLH 147.030",
+        "site": "K4TLH 147.030 Site",
+        "band": "VHF"
       },
       "geometry": {
         "type": "Point",
@@ -456,6 +494,20 @@
         "coordinates": [
           -84.89228,
           30.62662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "NCS",
+        "name": "W9ARO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.427592,
+          30.435573
         ]
       }
     }
