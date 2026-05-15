@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Repeater Path Map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map("map").setView([30.438, -84.280], 10);
+
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", { attribution: "&copy; Esri" }).addTo(map);
+
+    fetch("data.geojson")
+  .then(response => response.json())
+  .then(data => {
+
+    L.geoJSON(data, {
+
+      pointToLayer: function(feature, latlng) {
+
+        return L.circleMarker(latlng, {
+          radius: 8
+        });
+
+      },
+
+      onEachFeature: function(feature, layer) {
+
+        let popup = "";
+
+        if (feature.properties.name) {
+          popup += "<b>" + feature.properties.name + "</b><br>";
+        }
+
+        if (feature.properties.type) {
+          popup += "Type: " + feature.properties.type + "<br>";
+        }
+
+        if (feature.properties.freq) {
+          popup += "Freq: " + feature.properties.freq + "<br>";
+        }
+
+        if (feature.properties.quality) {
+          popup += "Quality: " + feature.properties.quality + "<br>";
+        }
+
+        layer.bindPopup(popup);
+
+      },
+
+      style: function(feature) {
+
+        if (feature.geometry.type === "LineString") {
+
+          return {
+            weight: 4
+          };
+
+        }
+
+      }
+
+    }).addTo(map);
+
+  });
+  </script>
+</body>
+</html>
