@@ -63,6 +63,26 @@
           popup += "Quality: " + feature.properties.quality + "<br>";
         }
 
+if (feature.properties.mobile_unit) {
+  popup += "Mobile: " + feature.properties.mobile_unit + "<br>";
+}
+
+if (feature.properties.stop) {
+  popup += "Stop: " + feature.properties.stop + "<br>";
+}
+
+if (feature.properties.location) {
+  popup += "Location: " + feature.properties.location + "<br>";
+}
+
+if (feature.properties.band) {
+  popup += "Band: " + feature.properties.band + "<br>";
+}
+
+if (feature.properties.site) {
+  popup += "Site: " + feature.properties.site + "<br>";
+}
+
         layer.bindPopup(popup);
 
       },
