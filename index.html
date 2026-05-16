@@ -37,18 +37,9 @@
 
       pointToLayer: function(feature, latlng) {
 
-        return L.circleMarker(latlng, {
-          radius: 8
-        });
-
-      },
-
-      pointToLayer: function(feature, latlng) {
-
-    // Repeater symbols
+    // Repeaters
     if (feature.properties.type === "Repeater") {
 
-        // VHF = blue circle
         if (feature.properties.band === "VHF") {
             return L.circleMarker(latlng, {
                 radius: 8,
@@ -59,7 +50,6 @@
             });
         }
 
-        // UHF = red polygon approximation
         if (feature.properties.band === "UHF") {
             return L.circleMarker(latlng, {
                 radius: 8,
@@ -71,7 +61,7 @@
         }
     }
 
-    // NCS symbol
+    // NCS
     if (feature.properties.type === "NCS") {
         return L.circleMarker(latlng, {
             radius: 10,
@@ -82,11 +72,22 @@
         });
     }
 
-    // Mobile units
+    // Mobile check-in points
+    if (feature.properties.type === "Mobile Check-In") {
+        return L.circleMarker(latlng, {
+            radius: 6,
+            color: "black",
+            fillColor: "yellow",
+            fillOpacity: 0.8,
+            weight: 2
+        });
+    }
+
+    // Fallback
     return L.circleMarker(latlng, {
         radius: 6,
-        color: "black",
-        fillColor: "yellow",
+        color: "gray",
+        fillColor: "lightgray",
         fillOpacity: 0.8,
         weight: 2
     });
