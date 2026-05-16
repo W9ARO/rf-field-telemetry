@@ -53,12 +53,12 @@
         // VHF = blue circle
         if (feature.properties.band === "VHF") {
             adjustedLatLng = L.latLng(
-    latlng.lat + 0.01,
-    latlng.lng - 0.01
+    latlng.lat + 0.003,
+    latlng.lng - 0.003
 );
 
 return L.circleMarker(adjustedLatLng, {
-                radius: 20,
+                radius: 8,
                 color: "blue",
                 fillColor: "blue",
                 fillOpacity: 0.8,
@@ -69,12 +69,12 @@ return L.circleMarker(adjustedLatLng, {
         // UHF = red polygon approximation
         if (feature.properties.band === "UHF") {
             adjustedLatLng = L.latLng(
-    latlng.lat + 0.01,
-    latlng.lng - 0.01
+    latlng.lat + 0.003,
+    latlng.lng - 0.003
 );
 
 return L.circleMarker(adjustedLatLng, {
-                radius: 4,
+                radius: 8,
                 color: "red",
                 fillColor: "red",
                 fillOpacity: 0.8,
