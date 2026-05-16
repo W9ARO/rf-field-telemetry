@@ -43,67 +43,6 @@
 
       },
 
-      pointToLayer: function(feature, latlng) {
-
-        let adjustedLatLng = latlng;
-
-    // Repeater symbols
-    if (feature.properties.type === "Repeater") {
-
-        // VHF = blue circle
-        if (feature.properties.band === "VHF") {
-            adjustedLatLng = L.latLng(
-    latlng.lat + 0.003,
-    latlng.lng - 0.003
-);
-
-return L.circleMarker(adjustedLatLng, {
-                radius: 8,
-                color: "blue",
-                fillColor: "blue",
-                fillOpacity: 0.8,
-                weight: 2
-            });
-        }
-
-        // UHF = red polygon approximation
-        if (feature.properties.band === "UHF") {
-            adjustedLatLng = L.latLng(
-    latlng.lat + 0.003,
-    latlng.lng - 0.003
-);
-
-return L.circleMarker(adjustedLatLng, {
-                radius: 8,
-                color: "red",
-                fillColor: "red",
-                fillOpacity: 0.8,
-                weight: 2
-            });
-        }
-    }
-
-    // NCS symbol
-    if (feature.properties.type === "NCS") {
-        return L.circleMarker(latlng, {
-            radius: 10,
-            color: "green",
-            fillColor: "green",
-            fillOpacity: 0.8,
-            weight: 2
-        });
-    }
-
-    // Mobile units
-    return L.circleMarker(latlng, {
-        radius: 6,
-        color: "black",
-        fillColor: "yellow",
-        fillOpacity: 0.8,
-        weight: 2
-    });
-},
-
       onEachFeature: function(feature, layer) {
 
         let popup = "";
