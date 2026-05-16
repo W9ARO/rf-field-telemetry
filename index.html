@@ -45,12 +45,19 @@
 
       pointToLayer: function(feature, latlng) {
 
+        let adjustedLatLng = latlng;
+
     // Repeater symbols
     if (feature.properties.type === "Repeater") {
 
         // VHF = blue circle
         if (feature.properties.band === "VHF") {
-            return L.circleMarker(latlng, {
+            adjustedLatLng = L.latLng(
+    latlng.lat + 0.003,
+    latlng.lng - 0.003
+);
+
+return L.circleMarker(adjustedLatLng, {
                 radius: 8,
                 color: "blue",
                 fillColor: "blue",
@@ -61,7 +68,12 @@
 
         // UHF = red polygon approximation
         if (feature.properties.band === "UHF") {
-            return L.circleMarker(latlng, {
+            adjustedLatLng = L.latLng(
+    latlng.lat + 0.003,
+    latlng.lng - 0.003
+);
+
+return L.circleMarker(adjustedLatLng, {
                 radius: 8,
                 color: "red",
                 fillColor: "red",
