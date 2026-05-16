@@ -42,22 +42,24 @@
 
         if (feature.properties.band === "VHF") {
             return L.circleMarker(latlng, {
-                radius: 20,
-                color: "black",
-                fillColor: "lime",
-                fillOpacity: 1,
-                weight: 6
-            });
+    radius: 10,
+    color: "#0000ff",
+    fillColor: "#0000ff",
+    fillOpacity: 1,
+    opacity: 1,
+    weight: 3
+});
         }
 
         if (feature.properties.band === "UHF") {
             return L.circleMarker(latlng, {
-                radius: 8,
-                color: "#cc0000",
-                fillColor: "#cc0000",
-                fillOpacity: 0.8,
-                weight: 2
-            });
+    radius: 10,
+    color: "#ff0000",
+    fillColor: "#ff0000",
+    fillOpacity: 1,
+    opacity: 1,
+    weight: 3
+});
         }
     }
 
