@@ -43,8 +43,8 @@
         if (feature.properties.band === "VHF") {
             return L.circleMarker(latlng, {
                 radius: 8,
-                color: "blue",
-                fillColor: "blue",
+                color: "#0033cc",
+                fillColor: "#0033cc",
                 fillOpacity: 0.8,
                 weight: 2
             });
@@ -53,8 +53,8 @@
         if (feature.properties.band === "UHF") {
             return L.circleMarker(latlng, {
                 radius: 8,
-                color: "red",
-                fillColor: "red",
+                color: "#cc0000",
+                fillColor: "#cc0000",
                 fillOpacity: 0.8,
                 weight: 2
             });
@@ -65,8 +65,8 @@
     if (feature.properties.type === "NCS") {
         return L.circleMarker(latlng, {
             radius: 10,
-            color: "green",
-            fillColor: "green",
+            color: "#008000",
+            fillColor: "#008000",
             fillOpacity: 0.8,
             weight: 2
         });
