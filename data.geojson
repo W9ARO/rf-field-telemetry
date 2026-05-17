@@ -100,6 +100,20 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "NCS",
+        "name": "W9ARO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.427592,
+          30.435573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "2",
@@ -500,14 +514,169 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "NCS",
-        "name": "W9ARO"
+        "type": "Mobile Route",
+        "mobile_unit": "AI4KA",
+        "name": "AI4KA Route"
       },
       "geometry": {
-        "type": "Point",
+        "type": "LineString",
         "coordinates": [
-          -84.427592,
-          30.435573
+          [
+            -84.22808,
+            30.54223
+          ],
+          [
+            -84.14555,
+            30.70264
+          ],
+          [
+            -84.02489,
+            30.79775
+          ],
+          [
+            -83.94639,
+            30.86072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Route",
+        "mobile_unit": "KN4FCC",
+        "name": "KN4FCC Route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.31111,
+            30.48375
+          ],
+          [
+            -84.38089,
+            30.6899
+          ],
+          [
+            -84.46856,
+            30.7572
+          ],
+          [
+            -84.56509,
+            30.88162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Route",
+        "mobile_unit": "KO4KKX",
+        "name": "KO4KKX Route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.79817,
+            30.39022
+          ],
+          [
+            -84.62772,
+            30.38932
+          ],
+          [
+            -84.42364,
+            30.30538
+          ],
+          [
+            -84.3625,
+            30.26351
+          ],
+          [
+            -84.37569,
+            30.17475
+          ],
+          [
+            -84.37978,
+            30.10464
+          ],
+          [
+            -84.38781,
+            30.02858
+          ],
+          [
+            -84.34051,
+            29.97368
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Route",
+        "mobile_unit": "KO4QMO",
+        "name": "KO4QMO Route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.6223,
+            30.43293
+          ],
+          [
+            -83.73271,
+            30.44555
+          ],
+          [
+            -83.76266,
+            30.45532
+          ],
+          [
+            -83.45619,
+            30.43117
+          ],
+          [
+            -83.35596,
+            30.39521
+          ],
+          [
+            -83.29772,
+            30.37987
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Mobile Route",
+        "mobile_unit": "WA4WES",
+        "name": "WA4WES Route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.36326,
+            30.47972
+          ],
+          [
+            -84.42552,
+            30.4897
+          ],
+          [
+            -84.59506,
+            30.53812
+          ],
+          [
+            -84.89228,
+            30.62662
+          ]
         ]
       }
     }
