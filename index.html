@@ -66,14 +66,14 @@ if (feature.properties.band === "VHF") {
         latlng.lng + 0.0025
     );
 
-    return L.circleMarker(uhfLatLng, {
-        radius: 9,
-        color: "#ff0000",
-        fillColor: "#ff0000",
-        fillOpacity: 1,
-        opacity: 1,
-        weight: 3
-    });
+return L.marker(uhfLatLng, {
+    icon: L.divIcon({
+        className: "",
+        html: '<div style="width:16px;height:16px;background:#ff0000;border:3px solid #ff0000;transform:rotate(45deg);"></div>',
+        iconSize: [22, 22],
+        iconAnchor: [11, 11]
+    })
+});
 }
     }
 
