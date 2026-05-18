@@ -7,7 +7,8 @@
         "type": "Repeater",
         "name": "AE4S 146.655",
         "site": "AE4S Site",
-        "band": "VHF"
+        "band": "VHF",
+        "score_prefix": "AE4S_146.655"
       },
       "geometry": {
         "type": "Point",
@@ -23,7 +24,8 @@
         "type": "Repeater",
         "name": "AE4S 443.950",
         "site": "AE4S Site",
-        "band": "UHF"
+        "band": "UHF",
+        "score_prefix": "AE4S_443.950"
       },
       "geometry": {
         "type": "Point",
@@ -39,23 +41,8 @@
         "type": "Repeater",
         "name": "K4TLH 146.910",
         "site": "K4TLH Site",
-        "band": "VHF"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.24,
-          30.45
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "type": "Repeater",
-        "name": "K4TLH 444.800",
-        "site": "K4TLH Site",
-        "band": "UHF"
+        "band": "VHF",
+        "score_prefix": "K4TLH_146.910"
       },
       "geometry": {
         "type": "Point",
@@ -71,13 +58,31 @@
         "type": "Repeater",
         "name": "K4TLH 147.030",
         "site": "K4TLH 147.030 Site",
-        "band": "VHF"
+        "band": "VHF",
+        "score_prefix": "K4TLH_147.030"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -84.22,
           30.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Repeater",
+        "name": "K4TLH 444.800",
+        "site": "K4TLH Site",
+        "band": "UHF",
+        "score_prefix": "K4TLH_444.800"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.24,
+          30.45
         ]
       }
     },
@@ -94,6 +99,141 @@
         "coordinates": [
           -84.22808,
           30.54223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "1",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 1 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.22808,
+            30.54223
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "1",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 1 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.22808,
+            30.54223
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "1",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 1 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.22808,
+            30.54223
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "1",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 1 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.22808,
+            30.54223
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "1",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 1 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.22808,
+            30.54223
+          ]
         ]
       }
     },
@@ -130,6 +270,141 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "2",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 2 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.14555,
+            30.70264
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "2",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "AI4KA Stop 2 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.14555,
+            30.70264
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "2",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 1.0,
+        "average": 1.5,
+        "name": "AI4KA Stop 2 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.14555,
+            30.70264
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "2",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 2 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.14555,
+            30.70264
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "2",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "AI4KA Stop 2 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.14555,
+            30.70264
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "3",
@@ -140,6 +415,141 @@
         "coordinates": [
           -84.02489,
           30.79775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "3",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 3 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.02489,
+            30.79775
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "3",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 3 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.02489,
+            30.79775
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "3",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 3 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.02489,
+            30.79775
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "3",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 3 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.02489,
+            30.79775
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "3",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 2.0,
+        "sent": 3.0,
+        "average": 2.5,
+        "name": "AI4KA Stop 3 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.02489,
+            30.79775
+          ]
         ]
       }
     },
@@ -162,6 +572,60 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "4",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "AI4KA Stop 4 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.94639,
+            30.86072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "AI4KA",
+        "stop": "4",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "AI4KA Stop 4 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.94639,
+            30.86072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KN4FCC",
         "stop": "1",
@@ -172,6 +636,114 @@
         "coordinates": [
           -84.31111,
           30.48375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "1",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 1 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.31111,
+            30.48375
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "1",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 1 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.31111,
+            30.48375
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "1",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "KN4FCC Stop 1 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.31111,
+            30.48375
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "1",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 1 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.31111,
+            30.48375
+          ]
         ]
       }
     },
@@ -194,6 +766,114 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "2",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 2 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.38089,
+            30.6899
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "2",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 2 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.38089,
+            30.6899
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "2",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 2 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.38089,
+            30.6899
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "2",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 2 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.38089,
+            30.6899
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KN4FCC",
         "stop": "3",
@@ -204,6 +884,114 @@
         "coordinates": [
           -84.46856,
           30.7572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "3",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 3 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.46856,
+            30.7572
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "3",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KN4FCC Stop 3 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.46856,
+            30.7572
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "3",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 1.0,
+        "average": 1.5,
+        "name": "KN4FCC Stop 3 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.46856,
+            30.7572
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KN4FCC",
+        "stop": "3",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 3.0,
+        "average": 2.5,
+        "name": "KN4FCC Stop 3 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.46856,
+            30.7572
+          ]
         ]
       }
     },
@@ -242,6 +1030,60 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "1",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 1 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.79817,
+            30.39022
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "1",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 1 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.79817,
+            30.39022
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "2",
@@ -252,6 +1094,60 @@
         "coordinates": [
           -84.62772,
           30.38932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "2",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 2 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.62772,
+            30.38932
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "2",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 2 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.62772,
+            30.38932
+          ]
         ]
       }
     },
@@ -274,6 +1170,87 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "3",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 0.0,
+        "average": 1.0,
+        "name": "KO4KKX Stop 3 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.42364,
+            30.30538
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "3",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 3 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.42364,
+            30.30538
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "3",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 3 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.42364,
+            30.30538
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "4",
@@ -284,6 +1261,87 @@
         "coordinates": [
           -84.3625,
           30.26351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "4",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 0.0,
+        "average": 1.0,
+        "name": "KO4KKX Stop 4 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.3625,
+            30.26351
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "4",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 4 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.3625,
+            30.26351
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "4",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 4 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.3625,
+            30.26351
+          ]
         ]
       }
     },
@@ -306,6 +1364,141 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "5",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 0.0,
+        "average": 1.5,
+        "name": "KO4KKX Stop 5 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.37569,
+            30.17475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "5",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 5 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.37569,
+            30.17475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "5",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 0.0,
+        "average": 1.5,
+        "name": "KO4KKX Stop 5 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.37569,
+            30.17475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "5",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 0.0,
+        "average": 1.5,
+        "name": "KO4KKX Stop 5 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.37569,
+            30.17475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "5",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 5 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.37569,
+            30.17475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "6",
@@ -316,6 +1509,60 @@
         "coordinates": [
           -84.37978,
           30.10464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "6",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 6 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.37978,
+            30.10464
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "6",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 6 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.37978,
+            30.10464
+          ]
         ]
       }
     },
@@ -338,6 +1585,60 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "7",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 7 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.38781,
+            30.02858
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "7",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 7 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.38781,
+            30.02858
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "8",
@@ -348,6 +1649,60 @@
         "coordinates": [
           -84.34051,
           29.97368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "8",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 8 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.34051,
+            29.97368
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4KKX",
+        "stop": "8",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4KKX Stop 8 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.34051,
+            29.97368
+          ]
         ]
       }
     },
@@ -370,6 +1725,114 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "1",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 2.0,
+        "average": 2.0,
+        "name": "KO4QMO Stop 1 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.6223,
+            30.43293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "1",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 2.0,
+        "sent": 2.0,
+        "average": 2.0,
+        "name": "KO4QMO Stop 1 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.6223,
+            30.43293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "1",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 1.0,
+        "sent": 1.0,
+        "average": 1.0,
+        "name": "KO4QMO Stop 1 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -83.6223,
+            30.43293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "1",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 2.0,
+        "average": 2.0,
+        "name": "KO4QMO Stop 1 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.6223,
+            30.43293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "2",
@@ -380,6 +1843,114 @@
         "coordinates": [
           -83.73271,
           30.44555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "2",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 2 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.73271,
+            30.44555
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "2",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 2 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.73271,
+            30.44555
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "2",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 2 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -83.73271,
+            30.44555
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "2",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 2 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.73271,
+            30.44555
+          ]
         ]
       }
     },
@@ -402,6 +1973,114 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "3",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 3 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.76266,
+            30.45532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "3",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 3 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.76266,
+            30.45532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "3",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 1.0,
+        "average": 1.5,
+        "name": "KO4QMO Stop 3 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -83.76266,
+            30.45532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "3",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 3 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.76266,
+            30.45532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "4",
@@ -412,6 +2091,87 @@
         "coordinates": [
           -83.45619,
           30.43117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "4",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 2.0,
+        "average": 2.0,
+        "name": "KO4QMO Stop 4 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.45619,
+            30.43117
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "4",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 2.0,
+        "sent": 0.0,
+        "average": 1.0,
+        "name": "KO4QMO Stop 4 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.45619,
+            30.43117
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "4",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 2.0,
+        "average": 2.0,
+        "name": "KO4QMO Stop 4 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.45619,
+            30.43117
+          ]
         ]
       }
     },
@@ -434,6 +2194,87 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "5",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "KO4QMO Stop 5 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.35596,
+            30.39521
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "5",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 2.0,
+        "sent": 0.0,
+        "average": 1.0,
+        "name": "KO4QMO Stop 5 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.35596,
+            30.39521
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "5",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 1.0,
+        "average": 1.5,
+        "name": "KO4QMO Stop 5 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.35596,
+            30.39521
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "6",
@@ -444,6 +2285,114 @@
         "coordinates": [
           -83.29772,
           30.37987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "6",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "KO4QMO Stop 6 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.29772,
+            30.37987
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "6",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 1.0,
+        "sent": 1.0,
+        "average": 1.0,
+        "name": "KO4QMO Stop 6 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -83.29772,
+            30.37987
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "6",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 1.0,
+        "average": 2.0,
+        "name": "KO4QMO Stop 6 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -83.29772,
+            30.37987
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "KO4QMO",
+        "stop": "6",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 2.0,
+        "sent": 0.0,
+        "average": 1.0,
+        "name": "KO4QMO Stop 6 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -83.29772,
+            30.37987
+          ]
         ]
       }
     },
@@ -466,6 +2415,141 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "1",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 1 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.36326,
+            30.47972
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "1",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 1 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.36326,
+            30.47972
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "1",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 1 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.36326,
+            30.47972
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "1",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 1 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.36326,
+            30.47972
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "1",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 1 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.36326,
+            30.47972
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "WA4WES",
         "stop": "2",
@@ -476,6 +2560,141 @@
         "coordinates": [
           -84.42552,
           30.4897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "2",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 2 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.42552,
+            30.4897
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "2",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 2 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.42552,
+            30.4897
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "2",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 2 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.42552,
+            30.4897
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "2",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 2 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.42552,
+            30.4897
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "2",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 2 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.42552,
+            30.4897
+          ]
         ]
       }
     },
@@ -498,6 +2717,141 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "3",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 2.0,
+        "sent": 3.0,
+        "average": 2.5,
+        "name": "WA4WES Stop 3 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.59506,
+            30.53812
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "3",
+        "repeater": "AE4S 443.950",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 3 to AE4S 443.950"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.59506,
+            30.53812
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "3",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "WA4WES Stop 3 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.59506,
+            30.53812
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "3",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF",
+        "received": 1.0,
+        "sent": 2.0,
+        "average": 1.5,
+        "name": "WA4WES Stop 3 to K4TLH 147.030"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.22,
+            30.5
+          ],
+          [
+            -84.59506,
+            30.53812
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "3",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF",
+        "received": 3.0,
+        "sent": 3.0,
+        "average": 3.0,
+        "name": "WA4WES Stop 3 to K4TLH 444.800"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.59506,
+            30.53812
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "WA4WES",
         "stop": "4",
@@ -508,6 +2862,60 @@
         "coordinates": [
           -84.89228,
           30.62662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "4",
+        "repeater": "AE4S 146.655",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 2.0,
+        "average": 2.5,
+        "name": "WA4WES Stop 4 to AE4S 146.655"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.2,
+            30.44
+          ],
+          [
+            -84.89228,
+            30.62662
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Signal Connector",
+        "mobile_unit": "WA4WES",
+        "stop": "4",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF",
+        "received": 3.0,
+        "sent": 0.0,
+        "average": 1.5,
+        "name": "WA4WES Stop 4 to K4TLH 146.910"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24,
+            30.45
+          ],
+          [
+            -84.89228,
+            30.62662
+          ]
         ]
       }
     },
