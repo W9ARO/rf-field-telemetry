@@ -149,13 +149,37 @@ if (feature.properties.site) {
   popup += "Site: " + feature.properties.site + "<br>";
 }
 
+if (feature.properties.repeater) {
+  popup += "Repeater: " + feature.properties.repeater + "<br>";
+}
+
+if (feature.properties.received !== undefined && feature.properties.received !== null) {
+  popup += "Received: " + feature.properties.received + "<br>";
+}
+
+if (feature.properties.sent !== undefined && feature.properties.sent !== null) {
+  popup += "Sent: " + feature.properties.sent + "<br>";
+}
+
+if (feature.properties.average !== undefined && feature.properties.average !== null) {
+  popup += "Average: " + feature.properties.average + "<br>";
+}
+
         layer.bindPopup(popup);
 
       },
 
       style: function(feature) {
 
-    // Mobile route lines
+    if (feature.properties.type === "Signal Connector") {
+        return {
+            color: feature.properties.band === "VHF" ? "#0000ff" : "#ff0000",
+            weight: Math.max(1, feature.properties.average),
+            opacity: 0.65,
+            dashArray: feature.properties.band === "VHF" ? "8 6" : "2 8"
+        };
+    }
+
     if (feature.properties.type === "Mobile Route") {
         return {
             color: "#000000",
@@ -164,7 +188,6 @@ if (feature.properties.site) {
         };
     }
 
-    // Hide any other LineStrings for now
     if (feature.geometry.type === "LineString") {
         return {
             opacity: 0
