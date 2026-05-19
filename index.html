@@ -111,6 +111,13 @@ return L.marker(uhfLatLng, {
 
       onEachFeature: function(feature, layer) {
 
+if (
+  feature.properties.type === "Mobile Route" ||
+  feature.properties.type === "Signal Connector"
+) {
+  return;
+}
+
         let popup = "";
 
         if (feature.properties.name) {
