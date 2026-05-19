@@ -92,7 +92,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "1",
-        "location": "US319@Kerry Forrest Pkwy"
+        "location": "US319@Kerry Forrest Pkwy",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -257,7 +294,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "2",
-        "location": "US319@SR93/Beachton GA"
+        "location": "US319@SR93/Beachton GA",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 1.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -408,7 +482,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "3",
-        "location": "Bark of Thomasville"
+        "location": "Bark of Thomasville",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 2.0,
+            "sent": 3.0,
+            "average": 2.5
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -559,7 +670,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "4",
-        "location": "US319@US19"
+        "location": "US319@US19",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -629,7 +777,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KN4FCC",
         "stop": "1",
-        "location": "I10@US27"
+        "location": "I10@US27",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -753,7 +938,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KN4FCC",
         "stop": "2",
-        "location": "US27@FL/GA state line"
+        "location": "US27@FL/GA state line",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -877,7 +1099,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KN4FCC",
         "stop": "3",
-        "location": "US27@Wautauga Rd"
+        "location": "US27@Wautauga Rd",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 1.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 3.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1001,7 +1260,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KN4FCC",
         "stop": "4",
-        "location": "US27@Bainbridge GA City Limit"
+        "location": "US27@Bainbridge GA City Limit",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1017,7 +1313,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "1",
-        "location": "FL20@FL65 Hosford FL"
+        "location": "FL20@FL65 Hosford FL",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1087,7 +1420,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "2",
-        "location": "FL20@Bloxham Cutoff"
+        "location": "FL20@Bloxham Cutoff",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 1.0,
+            "sent": 0.0,
+            "average": 0.5
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1157,7 +1527,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "3",
-        "location": "10703 Bloxham Cutoff Rd"
+        "location": "10703 Bloxham Cutoff Rd",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 0.0,
+            "average": 1.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1254,7 +1661,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "4",
-        "location": "US319@Bloxham Cutoff Rd"
+        "location": "US319@Bloxham Cutoff Rd",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 0.0,
+            "average": 1.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1351,7 +1795,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "5",
-        "location": "3086 Crawfordville Hwy"
+        "location": "3086 Crawfordville Hwy",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 0.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 0.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 0.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1502,7 +1983,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "6",
-        "location": "US319@98"
+        "location": "US319@98",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1572,7 +2090,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "7",
-        "location": "Woolley Park"
+        "location": "Woolley Park",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1642,7 +2197,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4KKX",
         "stop": "8",
-        "location": "Mashes Sands Beach"
+        "location": "Mashes Sands Beach",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1712,7 +2304,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "1",
-        "location": "I10@US221"
+        "location": "I10@US221",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 2.0,
+            "average": 2.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 2.0,
+            "sent": 2.0,
+            "average": 2.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 1.0,
+            "sent": 1.0,
+            "average": 1.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 2.0,
+            "average": 2.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1836,7 +2465,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "2",
-        "location": "Monticello Rest Area"
+        "location": "Monticello Rest Area",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1960,7 +2626,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "3",
-        "location": "I10@CR257"
+        "location": "I10@CR257",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 1.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2084,7 +2787,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "4",
-        "location": "I10@SR14"
+        "location": "I10@SR14",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 2.0,
+            "average": 2.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 2.0,
+            "sent": 0.0,
+            "average": 1.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 2.0,
+            "average": 2.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2181,7 +2921,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "5",
-        "location": "I10@CR53"
+        "location": "I10@CR53",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 2.0,
+            "sent": 0.0,
+            "average": 1.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 1.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 1.0,
+            "sent": 0.0,
+            "average": 0.5
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2278,7 +3055,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "KO4QMO",
         "stop": "6",
-        "location": "I10@CR255"
+        "location": "I10@CR255",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 1.0,
+            "sent": 1.0,
+            "average": 1.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 1.0,
+            "sent": 0.0,
+            "average": 0.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 1.0,
+            "average": 2.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 2.0,
+            "sent": 0.0,
+            "average": 1.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2402,7 +3216,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "WA4WES",
         "stop": "1",
-        "location": "I10@FL263"
+        "location": "I10@FL263",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2553,7 +3404,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "WA4WES",
         "stop": "2",
-        "location": "I10@US90"
+        "location": "I10@US90",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2704,7 +3592,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "WA4WES",
         "stop": "3",
-        "location": "I10@FL267"
+        "location": "I10@FL267",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 2.0,
+            "sent": 3.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 1.0,
+            "sent": 2.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 3.0,
+            "sent": 3.0,
+            "average": 3.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2855,7 +3780,44 @@
         "type": "Mobile Check-In",
         "mobile_unit": "WA4WES",
         "stop": "4",
-        "location": "I10@Rest Area East of Apalachicola River"
+        "location": "I10@Rest Area East of Apalachicola River",
+        "scores": [
+          {
+            "repeater": "AE4S 146.655",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 2.0,
+            "average": 2.5
+          },
+          {
+            "repeater": "AE4S 443.950",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 146.910",
+            "band": "VHF",
+            "received": 3.0,
+            "sent": 0.0,
+            "average": 1.5
+          },
+          {
+            "repeater": "K4TLH 147.030",
+            "band": "VHF",
+            "received": 0.0,
+            "sent": 0.0,
+            "average": 0.0
+          },
+          {
+            "repeater": "K4TLH 444.800",
+            "band": "UHF",
+            "received": 0.0,
+            "sent": null,
+            "average": 0.0
+          }
+        ]
       },
       "geometry": {
         "type": "Point",

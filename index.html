@@ -165,6 +165,18 @@ if (feature.properties.average !== undefined && feature.properties.average !== n
   popup += "Average: " + feature.properties.average + "<br>";
 }
 
+if (feature.properties.scores) {
+  popup += "<br><b>Repeater Scores</b><br>";
+
+  feature.properties.scores.forEach(function(score) {
+    popup += score.repeater
+      + " R:" + score.received
+      + " S:" + score.sent
+      + " A:" + score.average
+      + "<br>";
+  });
+}
+
         layer.bindPopup(popup);
 
       },
