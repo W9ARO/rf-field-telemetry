@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Repeater Path Map</title>
+  <title>RF Field Telemetry Map</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 
@@ -16,6 +16,28 @@
       height: 100%;
       width: 100%;
     }
+
+    .uhf-star {
+      position: relative;
+      width: 18px;
+      height: 18px;
+    }
+
+    .uhf-star-square {
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      background: #ff0000;
+      border: 2px solid #ff0000;
+      box-sizing: border-box;
+    }
+
+    .uhf-star-square.rotated {
+      transform: rotate(45deg);
+      transform-origin: center center;
+    }
   </style>
 </head>
 
@@ -27,196 +49,253 @@
   <script>
     const map = L.map("map").setView([30.438, -84.280], 10);
 
-    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", { attribution: "&copy; Esri" }).addTo(map);
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution: "&copy; Esri"
+      }
+    ).addTo(map);
 
-    fetch("data.geojson")
-  .then(response => response.json())
-  .then(data => {
+    const ncsLayer = L.layerGroup().addTo(map);
+    const mobileLayer = L.layerGroup().addTo(map);
+    const repeaterLayers = {};
+    const activeRepeaters = new Set();
 
-    L.geoJSON(data, {
+    function getOrCreateRepeaterLayer(repeaterName) {
+      if (!repeaterLayers[repeaterName]) {
+        repeaterLayers[repeaterName] = L.layerGroup().addTo(map);
+        activeRepeaters.add(repeaterName);
+      }
 
-      pointToLayer: function(feature, latlng) {
+      return repeaterLayers[repeaterName];
+    }
 
-    // Repeaters
-    if (feature.properties.type === "Repeater") {
+    function adjustedRepeaterLatLng(feature, latlng) {
+      if (feature.properties.band === "VHF") {
+        return L.latLng(
+          latlng.lat + 0.0025,
+          latlng.lng - 0.0025
+        );
+      }
 
-if (feature.properties.band === "VHF") {
+      if (feature.properties.band === "UHF") {
+        return L.latLng(
+          latlng.lat - 0.0025,
+          latlng.lng + 0.0025
+        );
+      }
 
-    // Slight offset for colocated repeaters
-    const vhfLatLng = L.latLng(
-        latlng.lat + 0.0025,
-        latlng.lng - 0.0025
-    );
+      return latlng;
+    }
 
-    return L.circleMarker(vhfLatLng, {
-        radius: 9,
-        color: "#0000ff",
-        fillColor: "#0000ff",
+    function makeRepeaterMarker(feature, latlng) {
+      const adjustedLatLng = adjustedRepeaterLatLng(feature, latlng);
+
+      if (feature.properties.band === "VHF") {
+        return L.circleMarker(adjustedLatLng, {
+          radius: 9,
+          color: "#0000ff",
+          fillColor: "#0000ff",
+          fillOpacity: 1,
+          opacity: 1,
+          weight: 3
+        });
+      }
+
+      if (feature.properties.band === "UHF") {
+        return L.marker(adjustedLatLng, {
+          icon: L.divIcon({
+            className: "",
+            html: `
+              <div class="uhf-star">
+                <div class="uhf-star-square"></div>
+                <div class="uhf-star-square rotated"></div>
+              </div>
+            `,
+            iconSize: [18, 18],
+            iconAnchor: [9, 9]
+          })
+        });
+      }
+
+      return L.circleMarker(adjustedLatLng, {
+        radius: 8,
+        color: "gray",
+        fillColor: "lightgray",
+        fillOpacity: 1,
+        opacity: 1,
+        weight: 2
+      });
+    }
+
+    function makeNcsMarker(latlng) {
+      return L.circleMarker(latlng, {
+        radius: 10,
+        color: "#008000",
+        fillColor: "#008000",
+        fillOpacity: 0.9,
+        opacity: 1,
+        weight: 2
+      });
+    }
+
+    function makeMobileMarker(latlng) {
+      return L.circleMarker(latlng, {
+        radius: 13,
+        color: "black",
+        fillColor: "yellow",
         fillOpacity: 1,
         opacity: 1,
         weight: 3
-    });
-}
-
- if (feature.properties.band === "UHF") {
-
-    // Slight offset for colocated repeaters
-    const uhfLatLng = L.latLng(
-        latlng.lat - 0.0025,
-        latlng.lng + 0.0025
-    );
-
-return L.marker(uhfLatLng, {
-    icon: L.divIcon({
-        className: "",
-        html: '<div style="width:16px;height:16px;background:#ff0000;border:3px solid #ff0000;transform:rotate(45deg);"></div>',
-        iconSize: [22, 22],
-        iconAnchor: [11, 11]
-    })
-});
-}
+      });
     }
 
-    // NCS
-    if (feature.properties.type === "NCS") {
-        return L.circleMarker(latlng, {
-            radius: 10,
-            color: "#008000",
-            fillColor: "#008000",
-            fillOpacity: 0.8,
-            weight: 2
-        });
-    }
+    function makeSignalConnector(feature) {
+      const band = feature.properties.band;
+      const average = Number(feature.properties.average || 1);
 
-    // Mobile check-in points
-    if (feature.properties.type === "Mobile Check-In") {
-        return L.circleMarker(latlng, {
-            radius: 13,
-            color: "black",
-            fillColor: "yellow",
-            fillOpacity: 1,
-            opacity: 1,
-            weight: 3
-        });
-    }
-
-    // Fallback
-    return L.circleMarker(latlng, {
-        radius: 6,
-        color: "gray",
-        fillColor: "lightgray",
-        fillOpacity: 0.8,
-        weight: 2
-    });
-},
-
-      onEachFeature: function(feature, layer) {
-
-if (
-  feature.properties.type === "Mobile Route" ||
-  feature.properties.type === "Signal Connector"
-) {
-  return;
-}
-
-        let popup = "";
-
-        if (feature.properties.name) {
-          popup += "<b>" + feature.properties.name + "</b><br>";
-        }
-
-        if (feature.properties.type) {
-          popup += "Type: " + feature.properties.type + "<br>";
-        }
-
-        if (feature.properties.freq) {
-          popup += "Freq: " + feature.properties.freq + "<br>";
-        }
-
-        if (feature.properties.quality) {
-          popup += "Quality: " + feature.properties.quality + "<br>";
-        }
-
-if (feature.properties.mobile_unit) {
-  popup += "Mobile: " + feature.properties.mobile_unit + "<br>";
-}
-
-if (feature.properties.stop) {
-  popup += "Stop: " + feature.properties.stop + "<br>";
-}
-
-if (feature.properties.location) {
-  popup += "Location: " + feature.properties.location + "<br>";
-}
-
-if (feature.properties.band) {
-  popup += "Band: " + feature.properties.band + "<br>";
-}
-
-if (feature.properties.site) {
-  popup += "Site: " + feature.properties.site + "<br>";
-}
-
-if (feature.properties.repeater) {
-  popup += "Repeater: " + feature.properties.repeater + "<br>";
-}
-
-if (feature.properties.received !== undefined && feature.properties.received !== null) {
-  popup += "Received: " + feature.properties.received + "<br>";
-}
-
-if (feature.properties.sent !== undefined && feature.properties.sent !== null) {
-  popup += "Sent: " + feature.properties.sent + "<br>";
-}
-
-if (feature.properties.average !== undefined && feature.properties.average !== null) {
-  popup += "Average: " + feature.properties.average + "<br>";
-}
-
-if (feature.properties.scores) {
-  popup += "<br><b>Average Signal Quality</b><br>";
-
-  feature.properties.scores.forEach(function(score) {
-    popup += score.repeater
-      + ": " + score.average
-      + "<br>";
-  });
-}
-
-        layer.bindPopup(popup);
-
-      },
-
-      style: function(feature) {
-
-    if (feature.properties.type === "Signal Connector") {
-        return {
-            color: feature.properties.band === "VHF" ? "#0000ff" : "#ff0000",
-            weight: Math.max(1, feature.properties.average),
+      return L.geoJSON(feature, {
+        style: function() {
+          return {
+            color: band === "VHF" ? "#0000ff" : "#ff0000",
+            weight: Math.max(1, average),
             opacity: 0.65,
-            dashArray: feature.properties.band === "VHF" ? "8 6" : "2 8"
-        };
+            dashArray: band === "VHF" ? "8 6" : "2 8",
+            interactive: false
+          };
+        },
+        interactive: false
+      });
     }
 
-    if (feature.properties.type === "Mobile Route") {
-        return {
-            color: "#000000",
-            weight: 3,
-            opacity: 0.7
-        };
+    function buildPopup(feature) {
+      let popup = "";
+      const props = feature.properties || {};
+
+      if (props.name) {
+        popup += "<b>" + props.name + "</b><br>";
+      }
+
+      if (props.type) {
+        popup += "Type: " + props.type + "<br>";
+      }
+
+      if (props.mobile_unit) {
+        popup += "Mobile: " + props.mobile_unit + "<br>";
+      }
+
+      if (props.stop) {
+        popup += "Stop: " + props.stop + "<br>";
+      }
+
+      if (props.location) {
+        popup += "Location: " + props.location + "<br>";
+      }
+
+      if (props.band) {
+        popup += "Band: " + props.band + "<br>";
+      }
+
+      if (props.site) {
+        popup += "Site: " + props.site + "<br>";
+      }
+
+      if (props.scores) {
+        const visibleScores = props.scores.filter(function(score) {
+          return activeRepeaters.has(score.repeater);
+        });
+
+        if (visibleScores.length > 0) {
+          popup += "<br><b>Average Signal Quality</b><br>";
+
+          visibleScores.forEach(function(score) {
+            popup += score.repeater
+              + ": " + score.average
+              + "<br>";
+          });
+        }
+      }
+
+      return popup;
     }
 
-    if (feature.geometry.type === "LineString") {
-        return {
-            opacity: 0
-        };
+    function addFeature(feature) {
+      const props = feature.properties || {};
+      const geometry = feature.geometry || {};
+
+      if (props.type === "Repeater" && geometry.type === "Point") {
+        const latlng = L.latLng(
+          geometry.coordinates[1],
+          geometry.coordinates[0]
+        );
+
+        const marker = makeRepeaterMarker(feature, latlng);
+        marker.bindPopup(function() {
+          return buildPopup(feature);
+        });
+
+        getOrCreateRepeaterLayer(props.name).addLayer(marker);
+        return;
+      }
+
+      if (props.type === "Signal Connector" && geometry.type === "LineString") {
+        const connector = makeSignalConnector(feature);
+        getOrCreateRepeaterLayer(props.repeater).addLayer(connector);
+        return;
+      }
+
+      if (props.type === "NCS" && geometry.type === "Point") {
+        const latlng = L.latLng(
+          geometry.coordinates[1],
+          geometry.coordinates[0]
+        );
+
+        const marker = makeNcsMarker(latlng);
+        marker.bindPopup(function() {
+          return buildPopup(feature);
+        });
+
+        ncsLayer.addLayer(marker);
+        return;
+      }
+
+      if (props.type === "Mobile Check-In" && geometry.type === "Point") {
+        const latlng = L.latLng(
+          geometry.coordinates[1],
+          geometry.coordinates[0]
+        );
+
+        const marker = makeMobileMarker(latlng);
+        marker.bindPopup(function() {
+          return buildPopup(feature);
+        });
+
+        mobileLayer.addLayer(marker);
+        return;
+      }
     }
 
-}
+    fetch("data.geojson")
+      .then(response => response.json())
+      .then(data => {
+        data.features.forEach(addFeature);
 
-    }).addTo(map);
+        L.control.layers(
+          null,
+          repeaterLayers,
+          {
+            collapsed: false
+          }
+        ).addTo(map);
 
-  });
+        map.on("overlayadd", function(event) {
+          activeRepeaters.add(event.name);
+        });
+
+        map.on("overlayremove", function(event) {
+          activeRepeaters.delete(event.name);
+        });
+      });
   </script>
 </body>
 </html>
