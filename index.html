@@ -152,13 +152,13 @@
 
 function makeSignalConnector(feature) {
 
-  const repeaterColors = {
-    "AE4S 146.655": "#0066ff",
-    "K4TLH 146.910": "#00aa00",
-    "K4TLH 147.030": "#ff8800",
-    "AE4S 443.950": "#cc00cc",
-    "K4TLH 444.800": "#dd0000"
-  };
+const repeaterColors = {
+  "AE4S 146.655": "Blue",
+  "K4TLH 146.910": "Green",
+  "K4TLH 147.030": "Orange",
+  "AE4S 443.950": "Purple",
+  "K4TLH 444.800": "Red"
+};
 
   const repeater = feature.properties.repeater;
   const average = Number(feature.properties.average || 1);
