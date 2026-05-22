@@ -291,6 +291,116 @@
     {
       "type": "Feature",
       "properties": {
+        "type": "NCS Repeater Link",
+        "name": "W9ARO to AE4S 146.655",
+        "repeater": "AE4S 146.655",
+        "band": "VHF"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.427592,
+            30.435573
+          ],
+          [
+            -84.2,
+            30.44
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "NCS Repeater Link",
+        "name": "W9ARO to AE4S 443.950",
+        "repeater": "AE4S 443.950",
+        "band": "UHF"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.427592,
+            30.435573
+          ],
+          [
+            -84.2,
+            30.44
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "NCS Repeater Link",
+        "name": "W9ARO to K4TLH 146.910",
+        "repeater": "K4TLH 146.910",
+        "band": "VHF"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.427592,
+            30.435573
+          ],
+          [
+            -84.24,
+            30.45
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "NCS Repeater Link",
+        "name": "W9ARO to K4TLH 147.030",
+        "repeater": "K4TLH 147.030",
+        "band": "VHF"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.427592,
+            30.435573
+          ],
+          [
+            -84.22,
+            30.5
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "NCS Repeater Link",
+        "name": "W9ARO to K4TLH 444.800",
+        "repeater": "K4TLH 444.800",
+        "band": "UHF"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.427592,
+            30.435573
+          ],
+          [
+            -84.24,
+            30.45
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "type": "Mobile Check-In",
         "mobile_unit": "AI4KA",
         "stop": "2",

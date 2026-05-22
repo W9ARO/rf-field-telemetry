@@ -150,6 +150,35 @@
       });
     }
 
+function makeNcsRepeaterLink(feature) {
+
+  const repeaterColors = {
+    "AE4S 146.655": "Blue",
+    "K4TLH 146.910": "Green",
+    "K4TLH 147.030": "Orange",
+    "AE4S 443.950": "Purple",
+    "K4TLH 444.800": "Red"
+  };
+
+  const repeater = feature.properties.repeater;
+
+  return L.geoJSON(feature, {
+
+    style: function() {
+      return {
+        color: repeaterColors[repeater] || "Gray",
+        weight: 2,
+        opacity: 0.55,
+        dashArray: "12 4 2 4",
+        interactive: false
+      };
+    },
+
+    interactive: false
+
+  });
+}
+    
 function makeSignalConnector(feature) {
 
 const repeaterColors = {
@@ -249,6 +278,12 @@ const repeaterColors = {
         getOrCreateRepeaterLayer(props.name).addLayer(marker);
         return;
       }
+
+      if (props.type === "NCS Repeater Link" && geometry.type === "LineString") {
+      const link = makeNcsRepeaterLink(feature);
+      getOrCreateRepeaterLayer(props.repeater).addLayer(link);
+      return;
+      }      
 
       if (props.type === "Signal Connector" && geometry.type === "LineString") {
         const connector = makeSignalConnector(feature);
