@@ -17,18 +17,18 @@
       width: 100%;
     }
 
-    .uhf-star {
+  .uhf-star {
       position: relative;
-      width: 18px;
-      height: 18px;
+      width: 28px;
+      height: 28px;
     }
 
-    .uhf-star-square {
-      position: absolute;
-      left: 4px;
-      top: 4px;
-      width: 10px;
-      height: 10px;
+  .uhf-star-square {
+    position: absolute;
+      left: 5px;
+      top: 5px;
+      width: 18px;
+      height: 18px;
       background: #ff0000;
       border: 2px solid #ff0000;
       box-sizing: border-box;
@@ -112,8 +112,8 @@
                 <div class="uhf-star-square rotated"></div>
               </div>
             `,
-            iconSize: [18, 18],
-            iconAnchor: [9, 9]
+            iconSize: [28, 28],
+            iconAnchor: [14, 14]
           })
         });
       }
@@ -150,23 +150,35 @@
       });
     }
 
-    function makeSignalConnector(feature) {
-      const band = feature.properties.band;
-      const average = Number(feature.properties.average || 1);
+function makeSignalConnector(feature) {
 
-      return L.geoJSON(feature, {
-        style: function() {
-          return {
-            color: band === "VHF" ? "#0000ff" : "#ff0000",
-            weight: Math.max(1, average),
-            opacity: 0.65,
-            dashArray: band === "VHF" ? "8 6" : "2 8",
-            interactive: false
-          };
-        },
+  const repeaterColors = {
+    "AE4S 146.655": "#0066ff",
+    "K4TLH 146.910": "#00aa00",
+    "K4TLH 147.030": "#ff8800",
+    "AE4S 443.950": "#cc00cc",
+    "K4TLH 444.800": "#dd0000"
+  };
+
+  const repeater = feature.properties.repeater;
+  const average = Number(feature.properties.average || 1);
+
+  return L.geoJSON(feature, {
+    style: function() {
+      return {
+        color: repeaterColors[repeater] || "#666666",
+        weight: Math.max(1, average),
+        opacity: 0.70,
+        dashArray:
+          feature.properties.band === "VHF"
+            ? "8 6"
+            : "2 8",
         interactive: false
-      });
-    }
+      };
+    },
+    interactive: false
+  });
+}
 
     function buildPopup(feature) {
       let popup = "";
