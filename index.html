@@ -379,21 +379,59 @@ legend.onAdd = function() {
   const div = L.DomUtil.create("div", "legend");
 
   div.innerHTML = `
-    <div class="legend-title">RF Field Telemetry</div>
 
-    <div class="legend-row">● <span>VHF repeater</span></div>
-    <div class="legend-row">✸ <span>UHF repeater</span></div>
-    <div class="legend-row">● <span>NCS</span></div>
-    <div class="legend-row">● <span>Mobile check-in</span></div>
+  <div class="legend-title">RF Field Telemetry</div>
 
-    <hr>
+  <div class="legend-row">
+    <span style="color:Blue;font-size:18px;">●</span>
+    <span>VHF repeater</span>
+  </div>
 
-    <div class="legend-row">━ <span>NCS ↔ repeater link</span></div>
-    <div class="legend-row">┄ <span>Repeater ↔ mobile signal path</span></div>
-    <div class="legend-row"><span>Line thickness = average signal quality</span></div>
+  <div class="legend-row">
+    <span style="color:Red;font-size:18px;">✸</span>
+    <span>UHF repeater</span>
+  </div>
 
-    <div class="legend-note">Repeater locations approximate pending verification.</div>
-  `;
+  <div class="legend-row">
+    <span style="color:Green;font-size:18px;">✡</span>
+    <span>Net Control Station</span>
+  </div>
+
+  <div class="legend-row">
+    <span style="color:black;font-size:18px;">●</span>
+    <span style="
+      display:inline-block;
+      width:10px;
+      height:10px;
+      background:Cornsilk;
+      border:2px solid black;
+      border-radius:50%;
+      margin-right:4px;
+      vertical-align:middle;
+    "></span>
+    <span>Mobile check-in</span>
+  </div>
+
+  <hr>
+
+  <div class="legend-row">
+    <span style="color:Gray;">━━</span>
+    <span>NCS ↔ repeater infrastructure</span>
+  </div>
+
+  <div class="legend-row">
+    <span style="color:Blue;">┄┄</span>
+    <span>Repeater ↔ mobile signal path</span>
+  </div>
+
+  <div class="legend-row">
+    <span>Line thickness = average signal quality</span>
+  </div>
+
+  <div class="legend-note">
+    Repeater locations approximate pending verification.
+  </div>
+`;
 
   return div;
 };
