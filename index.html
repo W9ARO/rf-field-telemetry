@@ -203,7 +203,39 @@
       });
     }
 
+function makeRangeRings(feature, centerLatLng) {
 
+  const repeaterColors = {
+    "AE4S 146.655": "Blue",
+    "K4TLH 146.910": "Green",
+    "K4TLH 147.030": "Orange",
+    "AE4S 443.950": "Purple",
+    "K4TLH 444.800": "Red"
+  };
+
+  const repeater = feature.properties.name;
+
+  const ringDistancesMiles = [10, 20];
+
+  const rings = [];
+
+  ringDistancesMiles.forEach(function(miles) {
+
+    rings.push(
+      L.circle(centerLatLng, {
+        radius: miles * 1609.344,
+        color: repeaterColors[repeater] || "Gray",
+        weight: 1,
+        opacity: 0.28,
+        fill: false,
+        interactive: false
+      })
+    );
+
+  });
+
+  return rings;
+}
 
     function makeNcsRepeaterLink(feature) {
 
@@ -331,7 +363,18 @@ const repeaterColors = {
         });
 
         getOrCreateRepeaterLayer(props.name).addLayer(marker);
-        return;
+
+        const rings = makeRangeRings(
+        feature,
+        adjustedRepeaterLatLng(feature, latlng)
+        );
+
+      rings.forEach(function(ring) {
+      getOrCreateRepeaterLayer(props.name).addLayer(ring);
+});
+
+return;
+
       }
 
       if (props.type === "NCS Repeater Link" && geometry.type === "LineString") {
