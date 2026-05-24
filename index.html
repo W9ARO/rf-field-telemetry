@@ -203,14 +203,7 @@
       });
     }
 
-    L.circle([lat, lon], {
-  radius: miles * 1609.344,
-  color: repeaterColor,
-  weight: 1,
-  opacity: 0.35,
-  fill: false,
-  interactive: false
-})
+
 
     function makeNcsRepeaterLink(feature) {
 
@@ -340,12 +333,6 @@ const repeaterColors = {
         getOrCreateRepeaterLayer(props.name).addLayer(marker);
         return;
       }
-
-      const rings = makeRangeRings(feature, adjustedRepeaterLatLng(feature, latlng));
-
-      rings.forEach(function(ring) {
-      getOrCreateRepeaterLayer(props.name).addLayer(ring);
-      });
 
       if (props.type === "NCS Repeater Link" && geometry.type === "LineString") {
       const link = makeNcsRepeaterLink(feature);
