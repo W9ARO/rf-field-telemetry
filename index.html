@@ -181,6 +181,23 @@
       });
     }
 
+    function addSystemRangeRings() {
+
+  const center = L.latLng(30.463, -84.220);
+  const ringDistancesMiles = [10, 20, 30];
+
+  ringDistancesMiles.forEach(function(miles) {
+    L.circle(center, {
+      radius: miles * 1609.344,
+      color: "Gray",
+      weight: 1,
+      opacity: 0.35,
+      fill: false,
+      interactive: false
+    }).addTo(map);
+  });
+}
+
     function makeNcsMarker(latlng) {
   return L.marker(latlng, {
     icon: L.divIcon({
@@ -364,14 +381,14 @@ const repeaterColors = {
 
         getOrCreateRepeaterLayer(props.name).addLayer(marker);
 
-        const rings = makeRangeRings(
-        feature,
-        adjustedRepeaterLatLng(feature, latlng)
-        );
-
-      rings.forEach(function(ring) {
-      getOrCreateRepeaterLayer(props.name).addLayer(ring);
-});
+//        const rings = makeRangeRings(
+//        feature,
+//        adjustedRepeaterLatLng(feature, latlng)
+//        );
+//
+//      rings.forEach(function(ring) {
+//      getOrCreateRepeaterLayer(props.name).addLayer(ring);
+//      });
 
 return;
 
@@ -506,6 +523,8 @@ legend.onAdd = function() {
 };
 
 legend.addTo(map);
+
+addSystemRangeRings();
 
   </script>
 </body>
