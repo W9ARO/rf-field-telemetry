@@ -123,23 +123,27 @@
       return repeaterLayers[repeaterName];
     }
 
-    function adjustedRepeaterLatLng(feature, latlng) {
-      if (feature.properties.band === "VHF") {
-        return L.latLng(
-          latlng.lat + 0.0025,
-          latlng.lng - 0.0025
-        );
-      }
+function adjustedRepeaterLatLng(feature, latlng) {
 
-      if (feature.properties.band === "UHF") {
-        return L.latLng(
-          latlng.lat - 0.0025,
-          latlng.lng + 0.0025
-        );
-      }
+  // Only the AE4S VHF/UHF repeaters are colocated.
+  // Offset them slightly so both symbols remain visible.
+  if (feature.properties.name === "AE4S 146.655") {
+    return L.latLng(
+      latlng.lat + 0.0025,
+      latlng.lng - 0.0025
+    );
+  }
 
-      return latlng;
-    }
+  if (feature.properties.name === "AE4S 443.950") {
+    return L.latLng(
+      latlng.lat - 0.0025,
+      latlng.lng + 0.0025
+    );
+  }
+
+  // All K4TLH repeaters are shown at their actual coordinates.
+  return latlng;
+}
 
     function makeRepeaterMarker(feature, latlng) {
       const adjustedLatLng = adjustedRepeaterLatLng(feature, latlng);
